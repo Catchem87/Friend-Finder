@@ -1,4 +1,6 @@
-var friendsList = require("../app/data/friends");
+var path = require("path");
+
+var friendsList = require(path.join(__dirname, "../data/friends"));
 
 module.exports = function(app) {
 
@@ -7,6 +9,6 @@ module.exports = function(app) {
     });
 
     app.post("/api/friends", function(req, res) {
-
-    })
+        friendsList.push(req.body);
+    });
 }
