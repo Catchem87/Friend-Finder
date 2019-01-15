@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Friends Finder - Survey</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width inital-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Survery Questions</h1>
+        <hr>
+        <h2>About You</h2>
+        <form method="POST" role="form" id="aboutYouInput">
+            <div class="form-group">
+                <label for="nameInput">Name (Required)</label>
+                <input type="text" class="form-control" id="nameInput" placeholder="Your Name Here">
+            </div>
+            <div class="form-group">
+                <label for="photoLinkInput">Link to Photo Image (Required)</label>
+                <input type="text" class="form-control" id="photoLinkInput" placeholder="Link To Your Image Here">
+            </div>
+            <div><hr></div>
+            <div class="form-group">
+                <h3>Question 1</h3>
+                <label for="question1Input">Your mind is always buzzing with unexplored ideas and plans.</label>
+                <select class="form-control" id="question1Input">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <h3>Question 2</h3>
+                <label for="question2Input">Generally speaking, you rely more on your experience than your imagination.</label>
+                <select class="form-control" id="question2Input">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <h3>Question 3</h3>
+                <label for="question3Input">You find it easy to stay relaxed and focused even when there is some pressure.</label>
+                <select class="form-control" id="question3Input">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <h3>Question 4</h3>
+                <label for="question4Input">You rarely do something just out of sheer curiosity.</label>
+                <select class="form-control" id="question4Input">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <h3>Question 5</h3>
+                <label for="question5Input">People can rarely upset you.</label>
+                <select class="form-control" id="question5Input">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <h3>Question 6</h3>
+                <label for="question6Input">It is often difficult for you to relate to other people's feelings.</label>
+                <select class="form-control" id="question6Input">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <h3>Question 7</h3>
+                <label for="question7Input">In a discussion, truth should be more important than people's sensitivities.</label>
+                <select class="form-control" id="question7Input">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <h3>Question 8</h3>
+                <label for="question8Input">You rarely get carried away by fantasies and ideas.</label>
+                <select class="form-control" id="question8Input">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <h3>Question 9</h3>
+                <label for="question9Input">You think that everyone's views should be respected regardless of whether they are supported by facts or not.</label>
+                <select class="form-control" id="question9Input">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <h3>Question 10</h3>
+                <label for="question10Input">You feel more energetic after spending time with a group of people.</label>
+                <select class="form-control" id="question10Input">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg" id="submitSurvey">Submit</button>
+        </form>
+    </div>
+    <br>
+
+    <div class="container">
+        <a href="/api/friends">API Friends List</a> |
+        <a href="https://github.com/Catchem87/Friend-Finder">GitHub Repo</a>
+    </div>
+
+    <script type="text/javascript">
+    $("#submitSurvey").on("click", function(event) {
+        event.preventDefault();
+        var newFriend = {
+            friendName: $("#nameInput").val().trim(),
+            photoLink: $("#photoLinkInput").val().trim(),
+            question1: $("#question1Input").val(),
+            question2: $("#question2Input").val(),
+            question3: $("#question3Input").val(),
+            question4: $("#question4Input").val(),
+            question5: $("#question5Input").val(),
+            question6: $("#question6Input").val(),
+            question7: $("#question7Input").val(),
+            question8: $("#question8Input").val(),
+            question9: $("#question9Input").val(),
+            question10: $("#question10Input").val(),
+        };
+        console.log(newFriend);
+
+        $.post("/api/friends", newFriend)
+            .then(function(data) {
+                console.log(data);
+            });
+    });
+
+    </script>
+</body>
+
+</html>
